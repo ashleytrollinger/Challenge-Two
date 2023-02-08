@@ -1,0 +1,66 @@
+* {
+    background-color: #295648;
+}
+
+/*This sets div that holds the image I want to occupy my background to take up the whole screen*/
+.bg {
+    position: fixed;
+    top: -50%;
+    left: -10%;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
+}
+
+/*This sets the image properties to keep it in place and what size I want it to appear*/
+.bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 50%;
+    min-height: 50%;
+}
+
+body {
+    margin-top: 125px;
+    margin-left: 220px;
+}
+
+header {
+    position: fixed;
+}
+
+/*Style settings for the 'Ashley Trollinger...'*/
+h1 {
+    font-family: monospace;
+    font-variant: small-caps;
+    font-size: 80px;
+    color: white;
+    background-color: black;
+    margin: 0;
+}
+
+nav {
+    background: transparent;
+
+}
+
+nav ul {
+    padding: 0;
+
+}
+
+/*Makes the navigation bar choices appear inline instead of stacked*/
+nav li {
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 25px;
+}
+
+aside {
+    margin-left: 500px;
+    font-size: 28px;
+}
