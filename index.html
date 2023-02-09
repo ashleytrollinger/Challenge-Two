@@ -7,6 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
     <title>Portfolio</title>
+    <script>
+        function openPage(event, pageName) {
+            var i, navcontent, navLink;
+            navcontent = document.getElementsByClassName("navcontent");
+            for (i = 0; i < navcontent.length; i++) {
+                navcontent[i].style.display = "none";
+            }
+            navLink = document.getElementsByClassName("navLink");
+            for (i = 0; i < navLink.length; i++) {
+                navLink[i].className = navLink[i].className.replace("active", "");
+            }
+            document.getElementById(pageName).style.display = "block";
+            event.currentTarget.className += " active";
+        }
+    </script>
 </head>
 
 <body>
@@ -14,9 +29,9 @@
         <h1>Ashley <br /> Trollinger...</h1>
         <nav>
             <ul>
-                <li>About Me</li>
-                <li>Work</li>
-                <li>Contact Me</li>
+                <li><button class="navlink" onmouseover="openPage(event,'about')">About Me</li></button>
+                <li><button class="navLink" onmouseover="openPage(event, 'work')">Work</button></li>
+                <li><button class="navlink" onmouseover="openPage(event, 'contact')"> Contact Me</li></button>
             </ul>
         </nav>
     </header>
@@ -27,14 +42,19 @@
 
 
     <aside>
-        <section>
+        <section id="about" class="navcontent">
             <p>My name is Ashley Trollinger and I am a 22 year old Full Stack Web Developement bootcamp student at
                 George
                 Wasthington University. I am currently living in Harrisonburg, Virginia and work part time at
                 Massanutten
                 Four Seasons Resort as a Guest Services Supervisor at the waterpark.</p>
         </section>
-        <section>
+
+        <section id="work" class="navcontent">
+
+        </section>
+
+        <section id="contact" class="navcontent">
             <ul>
                 <li>Email: ashley@trollingers.com</li>
                 <li>Phone: 703-999-****</li>

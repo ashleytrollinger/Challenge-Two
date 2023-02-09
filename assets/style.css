@@ -21,11 +21,15 @@
     bottom: 0;
     min-width: 50%;
     min-height: 50%;
+    z-index: 999;
 }
 
 body {
     margin-top: 125px;
     margin-left: 220px;
+    position: fixed;
+    z-index: 500;
+    background-color: #4b9d83;
 }
 
 header {
@@ -44,13 +48,28 @@ h1 {
 
 nav {
     background: transparent;
-
 }
 
 nav ul {
     padding: 0;
+}
+
+/*This is setting what the buttons in the nav bar will look like*/
+nav button {
+    background-color: #4b9d83;
+    border-width: 3px;
+    border-radius: 25%;
+    border-color: #46937b;
+    font-size: 30px;
 
 }
+
+nav button:hover {
+    background-color: #46937b;
+    border-color: #3f836d;
+    color: white;
+}
+
 
 /*Makes the navigation bar choices appear inline instead of stacked*/
 nav li {
@@ -60,7 +79,15 @@ nav li {
     font-size: 25px;
 }
 
+
+
+
+
 aside {
     margin-left: 500px;
     font-size: 28px;
+}
+
+.content {
+    display: none;
 }
