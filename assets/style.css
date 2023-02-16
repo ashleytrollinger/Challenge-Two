@@ -76,6 +76,12 @@ nav button:hover {
     color: white;
 }
 
+nav button:focus {
+    background-color: #295648;
+    border-color: #295648;
+    color: white;
+}
+
 
 /*Makes the navigation bar choices appear inline instead of stacked*/
 nav li {
@@ -101,12 +107,60 @@ aside {
     display: none;
 }
 
-/*Sets the size of the Image that is acting as a link to a project */
-#work img {
-    width: 472px;
-    height: 273px;
+#work {
+    background-image: url(./Refactoring.png);
+    background-size: cover;
+    width: 32vw;
+    height: 40vh;
 }
 
-#work img:hover {
-    border-style: inset;
+#work a {
+    background-color: rgba(255, 0, 0, 0);
+    text-decoration: none;
 }
+
+#work h2 {
+    background-color: rgba(255, 0, 0, 0);
+    color: rgba(255, 255, 255, 0);
+}
+
+#work h2:hover {
+    color: white;
+    background-color: #295648b0;
+}
+
+/* .clownSchool {
+    position: absolute;
+    top: 400px;
+    width: 50vw;
+    height: 50vh;
+    background-image: url(./Refactoring.png);
+
+}
+
+.batman {
+    width: 50vw;
+    height: 50vh;
+    background-color: #46937b00;
+    color: rgba(255, 0, 0, 0.103);
+    filter: blur(25px);
+}
+
+
+.batman:hover {
+    width: 50vw;
+    height: 50vh;
+    background-color: #46937b38;
+    color: rgb(255, 0, 0);
+
+} */
+
+/* .clownSchool h1 {
+    background-color: #4b9d8300;
+    color: #3f836e00;
+}
+
+.clownSchool h1:hover {
+    background-color: #4b9d83;
+    color: #3f836e;
+} */
