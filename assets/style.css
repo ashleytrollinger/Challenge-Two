@@ -107,6 +107,7 @@ aside {
     display: none;
 }
 
+/* This sets the background image of the Challenge One Section as well as its size */
 #work #Challenge-One {
     background-image: url(./Refactoring.png);
     background-size: cover;
@@ -114,6 +115,7 @@ aside {
     height: 40vh;
 }
 
+/* This sets the background image of the Prework Section as well as its size */
 #work #prework {
     background-image: url(./Pre-Work.png);
     background-size: cover;
@@ -121,53 +123,20 @@ aside {
     height: 25vh;
 }
 
+/* This sets the styling of links in the work section to have no underline and have a transparent background */
 #work a {
     background-color: rgba(255, 0, 0, 0);
     text-decoration: none;
 }
 
+/* This sets the styling for the h2 element in the work section to have a transparent background and transparent font color */
 #work h2 {
     background-color: rgba(255, 0, 0, 0);
     color: rgba(255, 255, 255, 0);
 }
 
+/* Sets the font color to white and the custom background color when the h2 element is hovered on */
 #work h2:hover {
     color: white;
     background-color: #295648b0;
 }
-
-/* .clownSchool {
-    position: absolute;
-    top: 400px;
-    width: 50vw;
-    height: 50vh;
-    background-image: url(./Refactoring.png);
-
-}
-
-.batman {
-    width: 50vw;
-    height: 50vh;
-    background-color: #46937b00;
-    color: rgba(255, 0, 0, 0.103);
-    filter: blur(25px);
-}
-
-
-.batman:hover {
-    width: 50vw;
-    height: 50vh;
-    background-color: #46937b38;
-    color: rgb(255, 0, 0);
-
-} */
-
-/* .clownSchool h1 {
-    background-color: #4b9d8300;
-    color: #3f836e00;
-}
-
-.clownSchool h1:hover {
-    background-color: #4b9d83;
-    color: #3f836e;
-} */
