@@ -107,11 +107,18 @@ aside {
     display: none;
 }
 
-#work {
+#work #Challenge-One {
     background-image: url(./Refactoring.png);
     background-size: cover;
     width: 32vw;
     height: 40vh;
+}
+
+#work #prework {
+    background-image: url(./Pre-Work.png);
+    background-size: cover;
+    width: 20vw;
+    height: 25vh;
 }
 
 #work a {
